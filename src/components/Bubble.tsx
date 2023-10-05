@@ -13,12 +13,13 @@ type Animation = {
 
 const randomNumber = (num: number) => Math.floor(Math.random() * num);
 
+
 const getRandomAnimation = (dimensions: number): Animation => ({
-  top: randomNumber(1000),
-  left: randomNumber(1000),
-  right: randomNumber(1000),
-  bottom: randomNumber(1000),
-  transition: { duration: 10, ease: "linear" },
+  top: randomNumber(700),
+  left: randomNumber(1200),
+  right: randomNumber(2000),
+  bottom: randomNumber(500),
+  transition: { duration: 5, ease: "linear" },
   width: dimensions,
   height: dimensions,
 });
@@ -36,7 +37,7 @@ export const Bubble = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setChange((prev) => !prev);
-    }, 5000);
+    }, 2000);
 
     return () => {
       clearInterval(interval);
@@ -49,11 +50,13 @@ export const Bubble = () => {
         move: move,
       }}
       animate={"move"}
-      className="absolute bg-teal-800 -z-10 rounded-full blur-2xl"
-      style={{width: '200px', height: '200px', top: randomNumber(1000),
-      left: randomNumber(1000),
-      right: randomNumber(1000),
-      bottom: randomNumber(1000),}}
+      className="absolute -z-10 bg-teal-800 rounded-full blur-2xl"
+      style={{width: '200px', height: '200px', 
+      top: randomNumber(1500),
+      left: randomNumber(1500),
+      right: randomNumber(1500),
+      bottom: randomNumber(1500),
+      }}
     />
   );
 };
