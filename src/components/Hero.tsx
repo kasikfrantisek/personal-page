@@ -14,7 +14,7 @@ export const Hero = () => {
   ];
 
   return (
-    <div className="text-white w-full h-screen snap-start span-always overflow-x-hidden flex flex-col justify-end relative">
+    <div className="text-white w-full h-screen overflow-x-hidden flex flex-col justify-end relative">
       {looperConfigs.map((config, index) => (
         <InfiniteLooper key={index} speed={config.speed} direction={config.direction}>
           <h1 className="ml-2 md:text-[100px] text-[50px] whitespace-nowrap text-white uppercase font-bold leading-[100%]">

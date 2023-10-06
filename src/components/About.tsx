@@ -4,7 +4,7 @@ export const About = () => {
   const bubbles = Array.from({ length: 30 }, (_, index) => <Bubble key={index} />);
 
   return (
-    <div className="w-full h-screen snap-start span-always text-white md:pt-20 md:pl-20 px-6 relative overflow-hidden">
+    <div className="w-full h-screen text-white md:pt-20 md:pl-20 px-6 relative overflow-hidden">
       <h1 className="md:text-[100px] text-3xl uppercase font-bold leading-[100%] w-4/5 md:w-2/3">From cocktails to code</h1>
       <div className="md:w-2/3 md:text-xl text-sm leading-[120%] space-y-2 md:space-y-5 md:pt-10 pt-5 font-light tracking-wide">
         <p>After high school, I visited some universities and lived abroad for a while. Eventually, I found my calling as a bartender, where I embraced the blend of creativity, order, and human interactions. However, the pandemic disrupted the stability of the hospitality industry, prompting me to shift my focus to digital screens. Driven by curiosity, I delved into coding to understand the inner workings of digital platforms.</p>
