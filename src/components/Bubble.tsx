@@ -13,28 +13,32 @@ type Animation = {
 
 const randomNumber = (num: number) => Math.floor(Math.random() * num);
 
-
-const getRandomAnimation = (dimensions: number): Animation => ({
-  top: randomNumber(700),
-  left: randomNumber(1200),
-  right: randomNumber(2000),
-  bottom: randomNumber(500),
-  transition: { duration: 5, ease: "linear" },
-  width: dimensions,
-  height: dimensions,
-});
-
 export const Bubble = () => {
-  const [dimensions, setDimensions] = useState((300));
+  const [windowWidth, setWindowWidth] = useState<number>(500);
+
+  const getRandomAnimation = (dimensions: number): Animation => ({
+    top: randomNumber(700),
+    left: randomNumber(windowWidth),
+    right: randomNumber(windowWidth),
+    bottom: randomNumber(500),
+    transition: { duration: 5, ease: "linear" },
+    width: dimensions,
+    height: dimensions,
+  });
+
+  const [dimensions, setDimensions] = useState(300);
   const [move, setMove] = useState<Animation>(getRandomAnimation(dimensions));
   const [change, setChange] = useState(true);
 
   useEffect(() => {
-    setDimensions(randomNumber(300));
+    setDimensions(randomNumber(200));
     setMove(getRandomAnimation(dimensions));
   }, [change]);
 
   useEffect(() => {
+    if(typeof window !== "undefined") {
+    setWindowWidth (() => window.innerWidth)
+  }
     const interval = setInterval(() => {
       setChange((prev) => !prev);
     }, 2000);
@@ -50,7 +54,7 @@ export const Bubble = () => {
         move: move,
       }}
       animate={"move"}
-      className="absolute -z-10 bg-teal-800 rounded-full blur-2xl"
+      className="fixed -z-10 bg-teal-800 rounded-full blur-2xl"
       style={{width: '200px', height: '200px', 
       top: randomNumber(1500),
       left: randomNumber(1500),

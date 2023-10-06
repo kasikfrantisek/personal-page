@@ -18,10 +18,10 @@ export const Hero = () => {
       {looperConfigs.map((config, index) => (
         <InfiniteLooper key={index} speed={config.speed} direction={config.direction}>
           <h1 className="ml-2 md:text-[100px] text-[50px] whitespace-nowrap text-white uppercase font-bold leading-[100%]">
-            {config.text}
+            {name}
           </h1>
-          <h1 className="ml-2 md:text-[100px] text-[50px] whitespace-nowrap text-white uppercase font-bold leading-[100%]">
-            {config.text}
+          <h1 className="ml-2 md:text-[100px] text-[50px] whitespace-nowrap text-white uppercase font-bold leading-[100%] italic">
+            {job}
           </h1>
         </InfiniteLooper>
       ))}

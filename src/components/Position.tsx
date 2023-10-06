@@ -18,7 +18,7 @@ export const Position = ({children, id, mouseOn}: Props) => {
 
     return (
         <div className="w-fit">
-            <h3 onMouseEnter={() => setId(id)} onMouseLeave={() => setHover(prev => !prev)} className="uppercase font-bold text-4xl cursor-pointer">{children}</h3>
+            <h3 onMouseEnter={() => setId(id)} onMouseLeave={() => setHover(prev => !prev)} className="uppercase font-bold text-sm pr-2 whitespace-nowrap md:text-4xl cursor-pointer">{children}</h3>
             <motion.div 
                   variants={{
                     initial: {width: 0, transition: { duration: 0.5, delay: 0.5 }},
