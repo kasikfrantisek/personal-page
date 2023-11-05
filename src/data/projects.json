@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "label": "Humbleteam",
+        "path": "humbleteam.png",
+        "link": "www.humbleteam.com",
+        "technologies": ["Nunjucks", "Strapi", "Stylus", "JavaScript"],
+        "type": "Employer Provided",
+        "heading": "Website Redesign for Humbleteam",
+        "description": "I undertook a significant project with 'Humbleteam,' involving a comprehensive website redesign to elevate the user experience. I closely collaborated with the project's designer, maintaining daily communication and feedback loops to ensure the successful execution of the project's vision. The main objective was to revamp the website's visual appeal and usability, aligning it with the latest design trends and user expectations.\n\nMy role as a developer entailed applying a wide range of technical skills. I harnessed the power of Nunjucks to streamline content management and templating, integrated Strapi to efficiently manage and serve content, utilized Stylus to craft elegant and responsive styles, and leveraged JavaScript for enhanced interactivity and functionality. The seamless integration of these technologies was critical in achieving the desired outcome, resulting in a website that not only met but exceeded user expectations.\n\nThis project was a remarkable learning experience, allowing me to hone my web development skills, collaborate effectively with designers, and deliver a polished, user-friendly website. It's a testament to my commitment to continuous improvement and delivering high-quality work."
+    }
+]

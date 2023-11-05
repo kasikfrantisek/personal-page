@@ -10,7 +10,7 @@ export const Project = ({path, label, onClick}: Props) => {
     return (
         <div className="relative">
             <picture className="">
-                <img className="rounded-full w-[300px] h-[300px]  object-cover object-center" src={path} />
+                <img className="rounded-full w-[300px] h-[300px]  object-cover object-center" src={`/projects/${path}`} />
             </picture>
             <motion.div whileHover={{
                 backgroundColor: '#134e4ab3',
