@@ -19,7 +19,7 @@ export const Projects = () => {
         <h1 className="md:text-[100px] text-3xl uppercase font-bold leading-[100%] pb-10">I did this for them</h1>
         <div className="grid grid-cols-3 h-fit gap-10 w-full relative items-center justify-items-center">
             {data.map((item) => {
-                return <Project key={item.id} label={item.label} path={item.path} onClick={() => handleOnClick(item)}/>
+                return <Project key={item.id} label={item.label} path={item.path[0]} onClick={() => handleOnClick(item)}/>
             })}
         </div>
             {displayModal && <ProjectModal project={project} onClick={() => setDisplayModal(false)}/>}

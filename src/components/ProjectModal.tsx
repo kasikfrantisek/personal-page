@@ -17,16 +17,33 @@ export const ProjectModal = ({onClick, project}: Props) => {
         <motion.div whileInView={{
             opacity: '100%',
             transition: {duration: 0.5}
-        }} className="h-full w-full backdrop-blur-xl bg-[#000000AA] text-white fixed top-0 left-0 opacity-0 pt-5 md:pt-20 md:pl-20">
-        <h1 className="md:text-[100px] text-3xl uppercase font-bold leading-[100%] w-4/5 md:w-2/3 pb-10">{project?.heading}</h1>
+        }} className="h-full w-full backdrop-blur-xl bg-[#000000AA] text-white fixed top-0 left-0 opacity-0 pt-5 md:p-20 z-50">
+            <h1 className="md:text-[100px] text-3xl uppercase font-bold leading-[100%] w-4/5 md:w-2/3 pb-10">{project?.heading}</h1>
             <button onClick={onClick} className="text-3xl absolute top-4 right-4">X</button>
+            <div className="grid grid-cols-2 gap-12">
+
+
             <div className="text-white">
-                <h1>{project?.label}</h1>
-                <p className="max-w-[50vw]">{project?.description}</p>
-                <div className="flex">
+                <div className="w-full flex items-end justify-between pb-5 max-w-[50vw]">
+                    <h1 className="font-bold uppercase texht-lg">{project?.label}</h1>
+                    <h1 className="font-bold uppercase texht-lg">{project?.type}</h1>
+                </div>
+                <p className="max-w-[50vw] pb-5">{project?.description}</p>
+                <div className="flex gap-2">
                     {project?.technologies.map((tech) => {
                         return <Tag title={tech} />
                     })}
+                </div>
+            </div>
+                <div className="w-full h-[60%] overflow-y-scroll">
+                    <div className="flex flex-col h-fit w-fit gap-8 flex-nowrap">
+
+                    {project?.path.map((image) => (
+                        <picture>
+                            <img className="rounded-xl" src={`/projects/${image}`}/>
+                        </picture>
+                    ))}
+                    </div>
                 </div>
             </div>
         </motion.div>
