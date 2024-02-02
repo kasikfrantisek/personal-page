@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export const Header = () => {
     return (
-        <header className="fixed w-screen bg-black">
+        <header className="fixed w-screen bg-black z-20">
             <nav className="text-white flex justify-between py-5 px-6 items-center bg-black">
                 <Link href="/">
                     <p className="uppercase text-3xl font-bold">FK</p>
