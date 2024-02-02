@@ -25,7 +25,7 @@ export const DetailPosition = ({data}: Props) => {
             </div>
             <p className="pt-3">{data.description}</p>
             <div className="flex gap-2 flex-wrap pt-5 md:w-2/3">
-                {data.skills.map(skill => <Tag title={skill}/>)}
+                {data.skills.map(skill => <Tag key={skill} title={skill}/>)}
             </div>
         </div>
     )

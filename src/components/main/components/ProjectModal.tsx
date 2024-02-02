@@ -1,9 +1,8 @@
-import { motion } from "framer-motion"
+import { motion, HTMLMotionProps } from "framer-motion"
 import data from '@/data/projects.json'
 import { useState } from "react";
 import { ProjectType } from "@/types/types";
 import { Tag } from "./Tag";
-
 
 type Props = {
     onClick: () => void;
@@ -31,7 +30,7 @@ export const ProjectModal = ({onClick, project}: Props) => {
                 <p className="max-w-[50vw] pb-5">{project?.description}</p>
                 <div className="flex gap-2">
                     {project?.technologies.map((tech) => {
-                        return <Tag title={tech} />
+                        return <Tag title={tech} key={tech}/>
                     })}
                 </div>
             </div>
@@ -39,7 +38,7 @@ export const ProjectModal = ({onClick, project}: Props) => {
                     <div className="flex flex-col h-fit w-fit gap-8 flex-nowrap">
 
                     {project?.path.map((image) => (
-                        <picture>
+                        <picture key={image}>
                             <img className="rounded-xl" src={`/projects/${image}`}/>
                         </picture>
                     ))}

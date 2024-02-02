@@ -1,8 +1,8 @@
-import { InfiniteLooper } from "./Looper";
+import { InfiniteLooper } from "../components/Looper";
 
 export const Hero = () => {
-  const name = 'františek kašík - ';
-  const job = 'web developer - ';
+  const name = 'františek kašík -';
+  const job = 'web developer -';
   const right: "right" = "right"
   const left: "left" = "left"
 
@@ -18,7 +18,7 @@ export const Hero = () => {
           <h1 className="ml-2 md:text-[200px] text-[100px] whitespace-nowrap text-white uppercase font-bold leading-[100%]">
             {name}
           </h1>
-          <h1 className="ml-2 md:text-[200px] text-[100px] whitespace-nowrap text-white uppercase font-bold leading-[100%] italic">
+          <h1 className="ml-2 md:text-[200px] text-[100px] whitespace-nowrap text-white uppercase font-bold leading-[100%]">
             {job}
           </h1>
         </InfiniteLooper>
