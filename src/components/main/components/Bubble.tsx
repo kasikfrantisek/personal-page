@@ -49,7 +49,7 @@ export const Bubble = () => {
   }, []);
 
   return (
-    <motion.div
+    <motion.span
       variants={{
         move: move,
       }}

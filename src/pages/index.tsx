@@ -3,7 +3,6 @@ import { Inter } from 'next/font/google'
 import { About } from '@/components/main/sections/About'
 import { Work } from '@/components/main/sections/Work'
 import { Projects } from '@/components/main/sections/Projects'
-import { Contacts } from '@/components/sidewide/Contact'
 
 const inter = Inter({ subsets: ['latin'] })
 
