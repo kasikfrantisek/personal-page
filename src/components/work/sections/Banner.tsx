@@ -1,9 +1,16 @@
 export const Banner = () => {
-    return (
-        <section className="w-screen h-[300px]">
-            <picture className="w-full h-full">
-                <img className="object-cover w-full h-full object-center" src="/projects/humbleteam.png" />
-            </picture>
-        </section>
-    )
-}
+  return (
+    <section className="h-[400px] w-screen">
+      <picture className="size-full">
+        <img
+          className="size-full object-cover"
+          style={{
+            objectPosition: '0 -250px',
+          }}
+          src="/mockup3.png"
+          alt="banner"
+        />
+      </picture>
+    </section>
+  );
+};

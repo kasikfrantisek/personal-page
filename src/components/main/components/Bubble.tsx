@@ -1,12 +1,12 @@
-import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
 
 type Animation = {
   top: number;
   left: number;
   right: number;
   bottom: number;
-  transition?: { duration: number , ease?: string};
+  transition?: { duration: number; ease?: string };
   width?: number;
   height?: number;
 };
@@ -21,7 +21,7 @@ export const Bubble = () => {
     left: randomNumber(windowWidth),
     right: randomNumber(windowWidth),
     bottom: randomNumber(500),
-    transition: { duration: 5, ease: "linear" },
+    transition: { duration: 5, ease: 'linear' },
     width: dimensions,
     height: dimensions,
   });
@@ -33,12 +33,12 @@ export const Bubble = () => {
   useEffect(() => {
     setDimensions(randomNumber(200));
     setMove(getRandomAnimation(dimensions));
-  }, [change]);
+  }, [change, dimensions]);
 
   useEffect(() => {
-    if(typeof window !== "undefined") {
-    setWindowWidth (() => window.innerWidth)
-  }
+    if (typeof window !== 'undefined') {
+      setWindowWidth(() => window.innerWidth);
+    }
     const interval = setInterval(() => {
       setChange((prev) => !prev);
     }, 2000);
@@ -53,13 +53,15 @@ export const Bubble = () => {
       variants={{
         move: move,
       }}
-      animate={"move"}
-      className="fixed -z-10 bg-teal-800 rounded-full blur-2xl"
-      style={{width: '200px', height: '200px', 
-      top: randomNumber(1500),
-      left: randomNumber(1500),
-      right: randomNumber(1500),
-      bottom: randomNumber(1500),
+      animate={'move'}
+      className="fixed -z-10 rounded-full bg-teal-800 blur-2xl"
+      style={{
+        width: '200px',
+        height: '200px',
+        top: randomNumber(1500),
+        left: randomNumber(1500),
+        right: randomNumber(1500),
+        bottom: randomNumber(1500),
       }}
     />
   );

@@ -1,14 +1,11 @@
-import { Banner } from '@/components/work/sections/Banner'
-import { Hero } from '@/components/work/sections/Hero'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import { Banner } from '@/components/work/sections/Banner';
+import { Hero } from '@/components/work/sections/Hero';
 
 export default function Project() {
   return (
     <>
-        <Hero title="humbleteam" />
-        <Banner />
+      <Hero title="humbleteam" />
+      <Banner />
     </>
-  )
+  );
 }

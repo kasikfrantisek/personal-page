@@ -1,10 +1,7 @@
-import { Hero } from '@/components/main/sections/Hero'
-import { Inter } from 'next/font/google'
-import { About } from '@/components/main/sections/About'
-import { Work } from '@/components/main/sections/Work'
-import { Projects } from '@/components/main/sections/Projects'
-
-const inter = Inter({ subsets: ['latin'] })
+import { About } from '@/components/main/sections/About';
+import { Hero } from '@/components/main/sections/Hero';
+import { Projects } from '@/components/main/sections/Projects';
+import { Work } from '@/components/main/sections/Work';
 
 export default function Home() {
   return (
@@ -14,5 +11,5 @@ export default function Home() {
       <Work />
       <Projects />
     </>
-  )
+  );
 }

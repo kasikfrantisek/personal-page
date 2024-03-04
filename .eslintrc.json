@@ -1,0 +1,7 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "@softopus/eslint-config",
+    "plugin:tailwindcss/recommended"
+  ]
+}

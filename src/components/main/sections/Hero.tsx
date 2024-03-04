@@ -1,10 +1,10 @@
-import { InfiniteLooper } from "../components/Looper";
+import { InfiniteLooper } from '../components/Looper';
 
 export const Hero = () => {
   const name = 'františek kašík -';
   const job = 'web developer -';
-  const right: "right" = "right"
-  const left: "left" = "left"
+  const right = 'right';
+  const left = 'left';
 
   const looperConfigs = [
     { speed: 25, direction: right, text: name },
@@ -12,13 +12,17 @@ export const Hero = () => {
   ];
 
   return (
-    <div className="text-white w-full h-screen overflow-x-hidden flex flex-col sm:justify-end justify-center relative">
+    <div className="relative flex h-screen w-full flex-col justify-center overflow-x-hidden text-white sm:justify-end">
       {looperConfigs.map((config, index) => (
-        <InfiniteLooper key={index} speed={config.speed} direction={config.direction}>
-          <h1 className="ml-2 md:text-[200px] text-[100px] whitespace-nowrap text-white uppercase font-bold leading-[100%]">
+        <InfiniteLooper
+          key={index}
+          speed={config.speed}
+          direction={config.direction}
+        >
+          <h1 className="ml-2 whitespace-nowrap text-[100px] font-bold uppercase leading-[100%] text-white md:text-[200px]">
             {name}
           </h1>
-          <h1 className="ml-2 md:text-[200px] text-[100px] whitespace-nowrap text-white uppercase font-bold leading-[100%]">
+          <h1 className="ml-2 whitespace-nowrap text-[100px] font-bold uppercase leading-[100%] text-white md:text-[200px]">
             {job}
           </h1>
         </InfiniteLooper>
