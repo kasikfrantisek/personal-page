@@ -1,0 +1,41 @@
+name: "Release preview"
+
+on:
+  pull_request:
+    branches: ["dev"]
+
+jobs:
+  vercel:
+    runs-on: ubuntu-latest
+    name: "Deploy"
+    env:
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+      VERCEL_SCOPE: ${{ secrets.VERCEL_SCOPE }}
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+
+      - name: "Determine Branch"
+        id: branches
+        uses: transferwise/sanitize-branch-name@v1
+
+      - name: "Deploy to Vercel"
+        id: "vercel_deployment"
+        run: |
+          echo "URL=$(npx vercel --token ${VERCEL_TOKEN})" >> $GITHUB_OUTPUT
+
+      - name: "Alias deployment URL"
+        run: |
+          npx vercel alias --token=${{ secrets.VERCEL_TOKEN }} --scope=${{ secrets.VERCEL_SCOPE }} set ${{ steps.vercel_deployment.outputs.URL }} frantisek-kasik-${{ steps.branches.outputs.sanitized-branch-name }}.vercel.app
+
+      - name: Comment PR
+        uses: thollander/actions-comment-pull-request@v2
+        with:
+          message: |
+            :rocket: PR deployed to https://frantisek-kasik-${{ steps.branches.outputs.sanitized-branch-name }}.vercel.app
+          comment_tag: deploy
