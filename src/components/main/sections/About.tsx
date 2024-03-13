@@ -2,7 +2,7 @@ import { SectionWrapper } from '../../sidewide/SectionWrapper';
 import { Bubble } from '../components/Bubble';
 
 export const About = () => {
-  const bubbles = Array.from({ length: 30 }, (_, index) => (
+  const bubbles = Array.from({ length: 40 }, (_, index) => (
     <Bubble key={index} />
   ));
 

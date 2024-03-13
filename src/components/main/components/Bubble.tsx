@@ -2,10 +2,8 @@ import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 
 type Animation = {
-  top: number;
-  left: number;
-  right: number;
-  bottom: number;
+  translateY: string;
+  translateX: string;
   transition?: { duration: number; ease?: string };
   width?: number;
   height?: number;
@@ -14,14 +12,10 @@ type Animation = {
 const randomNumber = (num: number) => Math.floor(Math.random() * num);
 
 export const Bubble = () => {
-  const [windowWidth, setWindowWidth] = useState<number>(500);
-
   const getRandomAnimation = (dimensions: number): Animation => ({
-    top: randomNumber(700),
-    left: randomNumber(windowWidth),
-    right: randomNumber(windowWidth),
-    bottom: randomNumber(500),
-    transition: { duration: 5, ease: 'linear' },
+    transition: { duration: 2, ease: 'linear' },
+    translateY: `-${randomNumber(100)}%`,
+    translateX: `-${randomNumber(100)}%`,
     width: dimensions,
     height: dimensions,
   });
@@ -29,6 +23,10 @@ export const Bubble = () => {
   const [dimensions, setDimensions] = useState(300);
   const [move, setMove] = useState<Animation>(getRandomAnimation(dimensions));
   const [change, setChange] = useState(true);
+  const [topLeft, setTopLeft] = useState({
+    top: `${randomNumber(100)}%`,
+    left: `${randomNumber(100)}%`,
+  });
 
   useEffect(() => {
     setDimensions(randomNumber(200));
@@ -36,12 +34,9 @@ export const Bubble = () => {
   }, [change, dimensions]);
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      setWindowWidth(() => window.innerWidth);
-    }
     const interval = setInterval(() => {
       setChange((prev) => !prev);
-    }, 2000);
+    }, 1500);
 
     return () => {
       clearInterval(interval);
@@ -58,10 +53,10 @@ export const Bubble = () => {
       style={{
         width: '200px',
         height: '200px',
-        top: randomNumber(1500),
-        left: randomNumber(1500),
-        right: randomNumber(1500),
-        bottom: randomNumber(1500),
+        top: topLeft.top,
+        left: topLeft.left,
+        translateX: '-50%',
+        translateY: '-50%',
       }}
     />
   );
