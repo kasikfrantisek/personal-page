@@ -20,17 +20,17 @@ export const Position = ({ children, id, mouseOn }: Props) => {
       <h3
         onMouseEnter={() => setId(id)}
         onMouseLeave={() => setHover((prev) => !prev)}
-        className="cursor-pointer whitespace-nowrap pr-2 text-sm font-bold uppercase md:text-4xl"
+        className="cursor-pointer whitespace-nowrap pr-2 text-h4-light"
       >
         {children}
       </h3>
-      <motion.div
+      <motion.span
         variants={{
           initial: { width: 0, transition: { duration: 0.5, delay: 0.5 } },
           load: { width: '100%', transition: { duration: 0.5 } },
         }}
         animate={hover ? 'load' : 'initial'}
-        className="h-[2px] bg-gradient-to-r from-teal-700 via-teal-900 to-black"
+        className="h-[2px] bg-gradient-to-r from-teal-700 to-transparent"
       />
     </div>
   );
