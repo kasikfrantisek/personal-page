@@ -26,18 +26,18 @@ module.exports = {
         },
       ],
       'h0-light': [
-        '200px',
+        '150px',
         {
           fontWeight: 200,
-          lineHeight: '200px',
+          lineHeight: '150px',
           letterSpacing: '-1px',
         },
       ],
       h0: [
-        '200px',
+        '150px',
         {
           fontWeight: 600,
-          lineHeight: '200px',
+          lineHeight: '150px',
           letterSpacing: '2px',
         },
       ],
@@ -61,6 +61,14 @@ module.exports = {
         '45px',
         {
           fontWeight: 600,
+          lineHeight: '45px',
+          letterSpacing: '-0.9px',
+        },
+      ],
+      'h1-light-mobile': [
+        '45px',
+        {
+          fontWeight: 300,
           lineHeight: '45px',
           letterSpacing: '-0.9px',
         },

@@ -83,7 +83,7 @@ export const Form = () => {
 
   return (
     <form
-      className="flex w-2/3 flex-col gap-7"
+      className="flex flex-col gap-7 py-10 lg:w-2/3 lg:py-0"
       onSubmit={handleSubmit(onSubmit)}
     >
       <Input
