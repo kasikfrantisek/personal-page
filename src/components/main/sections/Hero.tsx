@@ -1,32 +1,41 @@
-import { InfiniteLooper } from '../components/Looper';
+import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
+import { useRef } from 'react';
 
 export const Hero = () => {
-  const name = 'františek kašík -';
-  const job = 'web developer -';
-  const right = 'right';
-  const left = 'left';
+  const name = 'František Kašík';
+  const job = 'Web Developer';
 
-  const looperConfigs = [
-    { speed: 25, direction: right, text: name },
-    { speed: 30, direction: left, text: job },
-  ];
+  const ref = useRef<HTMLDivElement | null>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ['0.5 1.2', '1.5 1.2'],
+  });
+
+  const nameSlide = useSpring(
+    useTransform(scrollYProgress, [0.7, 1], [0, 1800]),
+  );
+
+  const positionSlide = useSpring(
+    useTransform(scrollYProgress, [0.7, 1], [0, -1600]),
+  );
 
   return (
-    <div className="relative flex h-screen w-full flex-col justify-center overflow-x-hidden text-white sm:justify-end">
-      {looperConfigs.map((config, index) => (
-        <InfiniteLooper
-          key={index}
-          speed={config.speed}
-          direction={config.direction}
-        >
-          <h1 className="ml-2 whitespace-nowrap text-[100px] font-bold uppercase leading-[100%] text-white md:text-[200px]">
-            {name}
-          </h1>
-          <h1 className="ml-2 whitespace-nowrap text-[100px] font-bold uppercase leading-[100%] text-white md:text-[200px]">
-            {job}
-          </h1>
-        </InfiniteLooper>
-      ))}
-    </div>
+    <motion.div
+      ref={ref}
+      className="relative flex h-screen w-full flex-col justify-center overflow-hidden text-white sm:justify-center"
+    >
+      <motion.h1
+        style={{ translateX: nameSlide }}
+        className="ml-2 whitespace-nowrap text-h0"
+      >
+        {name}
+      </motion.h1>
+      <motion.h1
+        style={{ translateX: positionSlide }}
+        className="ml-2 whitespace-nowrap text-h0-light"
+      >
+        {job}
+      </motion.h1>
+    </motion.div>
   );
 };

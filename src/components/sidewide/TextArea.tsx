@@ -20,12 +20,12 @@ export const TextArea = ({
   return (
     <div className="relative">
       <textarea
-        className="h-[20vh] w-full resize-none border-b-2 border-b-teal-800 bg-transparent text-xl text-white outline-none placeholder:text-sm placeholder:text-white placeholder:opacity-80"
+        className="h-[20vh] w-full resize-none border-b-2 border-b-teal-800 bg-transparent text-overline-16 text-white outline-none placeholder:text-overline-16-light placeholder:text-white placeholder:opacity-80"
         placeholder={placeholder}
         {...register(name, { required: required })}
       />
       {error && (
-        <p className="absolute top-0 text-xs text-red-800">
+        <p className="absolute right-0 top-0 text-overline-14 text-red-600">
           {error[name]?.type === 'required' && 'This field is required'}
         </p>
       )}
