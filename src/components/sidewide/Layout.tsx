@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 
 import { Contacts } from './Contact';
-import { Header } from './Header';
+import { Header } from './nav/Header';
 
 export const Layout = ({ children }: { children: ReactNode }) => {
   return (

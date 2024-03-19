@@ -12,7 +12,7 @@ export const Work = () => {
 
   return (
     <SectionWrapper title="Work, work, work" id="experience">
-      <div className="grid pt-4 md:gap-20 md:pt-14 lg:grid-cols-2">
+      <div className="grid pt-4 md:gap-20 md:pt-14 xl:grid-cols-2">
         <div className="flex flex-col gap-y-2 overflow-x-scroll md:flex-wrap md:space-y-5 md:overflow-x-hidden">
           {workData.map((job) => (
             <Position key={job.id} id={job.id} mouseOn={setDisplayed}>

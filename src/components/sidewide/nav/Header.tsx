@@ -1,7 +1,11 @@
+import { AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { useState } from 'react';
 
+import data from '@/data/navigation.json';
+
 import { MobileNav } from './MobileNav';
+import { NavItem } from './NavItem';
 
 export const Header = () => {
   const [openMobile, setOpenMobile] = useState(false);
@@ -18,28 +22,15 @@ export const Header = () => {
           {openMobile ? 'Close' : 'Menu'}
         </button>
         <ul className="hidden gap-5 text-overline-16 sm:flex">
-          <li>
-            <Link href="#about" scroll={false}>
-              About
-            </Link>
-          </li>
-          <li>
-            <Link href="#experience" scroll={false}>
-              Experience
-            </Link>
-          </li>
-          <li>
-            <Link href="#projects" scroll={false}>
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link href="#contact" scroll={false}>
-              Contact
-            </Link>
-          </li>
+          {data.nav.map((item) => (
+            <NavItem key={item.label} label={item.label} path={item.path} />
+          ))}
         </ul>
-        {openMobile && <MobileNav />}
+        <AnimatePresence>
+          {openMobile && (
+            <MobileNav onClick={() => setOpenMobile(!openMobile)} />
+          )}
+        </AnimatePresence>
       </nav>
     </header>
   );

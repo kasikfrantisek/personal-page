@@ -6,7 +6,7 @@ import { SectionWrapper } from './SectionWrapper';
 export const Contacts = () => {
   return (
     <SectionWrapper title="Hit me up!" id="contact">
-      <div className="grid size-full pt-14 lg:grid-cols-2">
+      <div className="grid size-full pt-14 xl:grid-cols-2">
         <div>
           <h5 className="text-h5-light text-white lg:w-2/3">
             Hey you can hit me up directly on one of the contacts bellow, but if
@@ -25,7 +25,7 @@ export const Contacts = () => {
             </Link>
           </div>
         </div>
-        <div className="w-full">
+        <div className="w-full pt-14">
           <Form />
         </div>
       </div>

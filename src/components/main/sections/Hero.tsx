@@ -34,13 +34,13 @@ export const Hero = () => {
       <div className="mx-auto w-screen max-w-[1440px] overflow-visible pl-6 md:pl-20">
         <motion.h1
           style={{ translateX: nameSlide }}
-          className="whitespace-nowrap text-h1-mobile sm:text-h0-mobile lg:text-h0"
+          className="whitespace-nowrap text-h1-mobile sm:text-h0-mobile xl:text-h0"
         >
           {name}
         </motion.h1>
         <motion.h1
           style={{ translateX: positionSlide }}
-          className="whitespace-nowrap text-h1-light-mobile sm:text-h0-light-mobile lg:text-h0-light"
+          className="whitespace-nowrap text-h1-light-mobile sm:text-h0-light-mobile xl:text-h0-light"
         >
           {job}
         </motion.h1>
