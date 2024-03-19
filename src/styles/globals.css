@@ -1,58 +1,15 @@
+@import './fonts.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.dot {
-    animation: appear .3s ease-in-out;
+body {
+  font-family: 'Nohemi';
+  background-color: black;
+  scroll-behavior: smooth;
 }
 
-@keyframes appear {
-    0% {
-        transform: scale(0);
-        opacity: 0;
-    }
-    100% {
-        transform: scale();
-        opacity: 100%;
-    }
+html {
+  scroll-behavior: smooth;
 }
-
-.textAppear {
-    opacity: 1;
-}
-
-.textDisappear {
-    opacity: 0;
-}
-
-body{
-    background-color: black;
-}
-
-
-@keyframes slideAnimation {
-    from {
-      transform: translateX(0%);
-    }
-    to {
-      transform: translateX(-100%);
-    }
-  }
-  
-  .looper {
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .looper__innerList {
-    display: flex;
-    justify-content: center;
-    width: fit-content;
-  }
-  
-  .looper__listInstance {
-    display: flex;
-    width: max-content;
-  
-    animation: slideAnimation linear infinite;
-  }

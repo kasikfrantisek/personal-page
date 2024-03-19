@@ -64,13 +64,13 @@ export const Form = () => {
   if (show)
     return (
       <div>
-        <h3 className="mb-8 w-2/3 text-3xl text-white">
+        <h3 className="mb-8 w-2/3 text-h2 text-white">
           {succes
             ? 'Thank you, for the message, I will contact you as soon as possible (2 to 3 days)'
             : 'Something went wrong, please try again...'}
         </h3>
         <button
-          className="inline w-fit rounded-full border-[1px] border-white bg-transparent px-3 py-2 text-sm text-white"
+          className="inline w-fit rounded-full border-[1px] border-white bg-transparent px-3 py-2 text-overline-16-light text-white"
           onClick={() => {
             setShow(false);
             setSucces(false);
@@ -83,7 +83,7 @@ export const Form = () => {
 
   return (
     <form
-      className="flex w-2/3 flex-col gap-7"
+      className="flex flex-col gap-7 py-10 lg:w-2/3 lg:py-0"
       onSubmit={handleSubmit(onSubmit)}
     >
       <Input
@@ -123,7 +123,7 @@ export const Form = () => {
       />
       <button
         type="submit"
-        className="inline w-fit rounded-full border-[1px] border-white bg-transparent px-3 py-2 text-sm text-white"
+        className="inline w-fit rounded-full border-[1px] border-white bg-transparent px-3 py-2 text-overline-16-light text-white"
       >
         Send
       </button>

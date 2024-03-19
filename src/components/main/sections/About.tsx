@@ -1,17 +1,14 @@
 import { SectionWrapper } from '../../sidewide/SectionWrapper';
-import { Bubble } from '../components/Bubble';
 
 export const About = () => {
-  const bubbles = Array.from({ length: 30 }, (_, index) => (
-    <Bubble key={index} />
-  ));
-
   return (
     <SectionWrapper
-      title={'From cocktails<br /> <span class="italic">to code</span>'}
+      title={
+        'From cocktails<br /> <span class="text-h1-light-mobile md:text-h1-light">To code</span>'
+      }
       id="about"
     >
-      <div className="space-y-2 pt-5 text-sm font-light leading-[120%] tracking-wide md:w-2/3 md:space-y-5 md:pt-10 md:text-xl">
+      <div className="space-y-2 pt-5 text-overline-16 md:space-y-5 md:pt-10 lg:w-2/3">
         <p>
           After high school, I visited some universities and lived abroad for a
           while. Eventually, I found my calling as a bartender, where I embraced
@@ -35,7 +32,6 @@ export const About = () => {
           experiences in greater detail and structure.
         </p>
       </div>
-      {bubbles}
     </SectionWrapper>
   );
 };

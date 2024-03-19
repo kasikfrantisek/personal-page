@@ -18,25 +18,19 @@ export const Input = ({
   error,
 }: Props) => {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  const phoneRegex = /^\d{10}$/;
 
   return (
     <div className="relative">
       <input
-        className="w-full border-b-2 border-b-teal-800 bg-transparent text-xl text-white outline-none placeholder:text-sm placeholder:text-white placeholder:opacity-80"
+        className="w-full border-b-2 border-b-teal-800 bg-transparent text-overline-16 text-white outline-none placeholder:text-overline-16-light placeholder:text-white placeholder:opacity-80"
         placeholder={placeholder}
         {...register(name, {
           required: required,
-          pattern:
-            name === 'mail'
-              ? emailRegex
-              : name === 'phone'
-              ? phoneRegex
-              : undefined,
+          pattern: name === 'mail' ? emailRegex : undefined,
         })}
       />
       {error && (
-        <p className="absolute top-0 text-xs text-red-800">
+        <p className="absolute right-0 top-0 text-overline-14 text-red-600">
           {error[name]?.type === 'required' && 'This field is required'}
           {error[name]?.type === 'pattern' && 'This is an invalid format'}
         </p>
