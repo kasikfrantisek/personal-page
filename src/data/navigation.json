@@ -1,0 +1,20 @@
+{
+    "nav": [
+        {
+            "path": "#about",
+            "label": "About"
+        },
+        {
+            "path": "#experience",
+            "label": "Experience"
+        },
+        {
+            "path": "#projects",
+            "label": "Projects"
+        },
+        {
+            "path": "#contact",
+            "label": "Contact"
+        }
+    ]
+}

@@ -1,26 +1,14 @@
-import { motion, useScroll, useTransform } from 'framer-motion';
-import { useRef } from 'react';
-
 import { SectionWrapper } from '../../sidewide/SectionWrapper';
 
 export const About = () => {
-  const ref = useRef<HTMLDivElement | null>(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ['0 1', '1.3 1'],
-  });
-
-  const opacity = useTransform(scrollYProgress, [0.5, 0.7], [0, 1]);
   return (
     <SectionWrapper
-      title={'From cocktails<br /> <span class="text-h1-light">To code</span>'}
+      title={
+        'From cocktails<br /> <span class="text-h1-light-mobile md:text-h1-light">To code</span>'
+      }
       id="about"
     >
-      <motion.div
-        className="space-y-2 pt-5 text-p md:w-2/3 md:space-y-5 md:pt-10"
-        ref={ref}
-        style={{ opacity }}
-      >
+      <div className="space-y-2 pt-5 text-overline-16 md:space-y-5 md:pt-10 lg:w-2/3">
         <p>
           After high school, I visited some universities and lived abroad for a
           while. Eventually, I found my calling as a bartender, where I embraced
@@ -43,7 +31,7 @@ export const About = () => {
           Now, let&apos;s proceed to the next screen to explore my previous work
           experiences in greater detail and structure.
         </p>
-      </motion.div>
+      </div>
     </SectionWrapper>
   );
 };
