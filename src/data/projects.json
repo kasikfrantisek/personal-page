@@ -10,7 +10,7 @@
     {
         "id": 2,
         "label": "Rimac Technology",
-        "link": "https://www.rc.rimac-technology.com",
+        "link": "https://rc.rimac-technology.com",
         "technologies": ["Next.js", "Tailwind", "Storybook", "React.js", "Apollo", "Framer-motion", "Typescript", "react-hook-form", "Chart.js", "Figma", "Vercel"],
         "heading": "Website build",
         "description": "I was given some Figma files to work on a project, tasked with building a polished website for a major automotive company. We opted for Next.js to balance presentation with analytics and SEO considerations for future marketing. Styling was handled with Tailwind, while Framer Motion added some flair with animations. Later on, we integrated the site with Strapi CMS using Apollo Client, fine-tuning queries for seamless functionality (codegen was a lifesaver). Then, the folks at Rimac decided on a more formal design direction, so now I'm working on implementaiton of the new design. Two more Rimac sites are in the works, each following a similar style, so I'm developing a custom UI library. The challenges? Making animations smooth on smaller screens and crafting that custom library, but both were great learning opportunities."
@@ -18,7 +18,7 @@
     {
         "id": 3,
         "label": "AllAthlete",
-        "link": "https://www.start.allathlete.com",
+        "link": "https://start.allathlete.com",
         "technologies": ["Next.js", "Tailwind", "Stylus", "Framer-motion", "i18n", "Typescript", "Vercel", "BitBucket Pipelines", "CI/CD"],
         "heading": "Landing page build",
         "description": "I was entrusted with the development of a landing page for a US-based startup, specializing in high school and university sports talent recruitment. Given the emphasis on marketing campaigns, Next.js was the natural choice. Leveraging Tailwind and Framer Motion, I meticulously translated Figma designs into a pixel-perfect website. In addition to crafting the landing page, part of my responsibility included establishing a Bitbucket pipeline for CI/CD. This ensured seamless integration and deployment processes. The page is currently deployed on Vercel, further streamlining the deployment workflow. This project not only delivered the desired landing page but also paved the way for an ongoing partnership for my employer, Softopus. This collaboration now extends to a redesign of the web application itself."
