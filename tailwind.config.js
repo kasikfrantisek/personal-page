@@ -173,8 +173,8 @@ module.exports = {
         '16px',
         {
           fontWeight: 400,
-          lineHeight: '19.2px',
-          letterSpacing: '-0.16px',
+          lineHeight: '20px',
+          letterSpacing: '0.3px',
         },
       ],
       'overline-14-medium': [

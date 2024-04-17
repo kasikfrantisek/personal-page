@@ -1,55 +1,58 @@
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+
+import { LinkIcon } from './LinkIcon';
+import { Tag } from './Tag';
 
 type Props = {
-  path: string;
-  label: string;
-  onClick: () => void;
+  data: {
+    id: number;
+    label: string;
+    link: string;
+    technologies: string[];
+    heading: string;
+    description: string;
+  };
 };
 
-export const Project = ({ path, label, onClick }: Props) => {
-  const [showImage, setShowImage] = useState(false);
-
+export const Project = ({ data }: Props) => {
   return (
-    <div
-      className="relative"
-      onMouseEnter={() => setShowImage(true)}
-      onMouseLeave={() => setShowImage(false)}
-      onClick={() => setShowImage((prev) => !prev)}
+    <motion.div
+      variants={{
+        initial: { opacity: 0 },
+        visible: { opacity: 1, transition: { duration: 0.5 } },
+        exit: {
+          opacity: 0,
+          transition: { duration: 0.5 },
+          position: 'absolute',
+          top: 0,
+        },
+      }}
+      animate="visible"
+      initial="initial"
+      exit="exit"
+      className="text-white"
     >
-      <motion.picture
-        variants={{
-          hidden: { opacity: 0, transition: { duration: 0.7 } },
-          visible: { opacity: 1, transition: { duration: 0.7 } },
-        }}
-        initial="hidden"
-        animate={showImage ? 'visible' : 'hidden'}
-      >
-        <img
-          className="size-[300px] rounded-full object-cover  object-center"
-          src={`/projects/${path}`}
-        />
-      </motion.picture>
-      <motion.div
-        variants={{
-          visible: {
-            backgroundColor: '#134e4ab3',
-            transition: { duration: 0.3 },
-          },
-          hidden: {
-            backgroundColor: '#00000000',
-            transition: { duration: 0.3 },
-          },
-        }}
-        initial="hidden"
-        animate={showImage ? 'visible' : 'hidden'}
-        onClick={onClick}
-        className="absolute left-[-1px] top-1/2 flex size-[303px] -translate-y-1/2 items-center justify-center rounded-full hover:cursor-pointer"
-      >
-        <h2 className="text-3xl font-bold uppercase leading-[100%] text-white">
-          {label}
-        </h2>
-      </motion.div>
-    </div>
+      <h2 className="text-h4 uppercase md:text-h3">{data.heading}</h2>
+      <div className="flex items-end justify-between md:pt-3">
+        <a
+          href={data.link}
+          target="_blank"
+          className="relative flex items-center gap-1"
+        >
+          <h2 className="text-overline-16 hover:underline md:text-h5">
+            {data.label}
+          </h2>
+          <span className="absolute -right-6 -top-2">
+            <LinkIcon />
+          </span>
+        </a>
+      </div>
+      <p className="pt-3 text-p-small">{data.description}</p>
+      <div className="flex w-full flex-wrap gap-2 pt-5">
+        {data.technologies.map((technology) => (
+          <Tag key={technology} title={technology} />
+        ))}
+      </div>
+    </motion.div>
   );
 };

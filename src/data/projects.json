@@ -2,11 +2,41 @@
     {
         "id": 1,
         "label": "Humbleteam",
-        "path": ["humbleteam.png","humbleteam.png","humbleteam.png","humbleteam.png"],
-        "link": "www.humbleteam.com",
-        "technologies": ["Nunjucks", "Strapi", "Stylus", "JavaScript"],
-        "type": "Employer Provided - Softopus",
-        "heading": "Website Redesign for Humbleteam",
-        "description": "I undertook a significant project with 'Humbleteam,' involving a comprehensive website redesign to elevate the user experience. I closely collaborated with the project's designer, maintaining daily communication and feedback loops to ensure the successful execution of the project's vision. The main objective was to revamp the website's visual appeal and usability, aligning it with the latest design trends and user expectations.\n\nMy role as a developer entailed applying a wide range of technical skills. I harnessed the power of Nunjucks to streamline content management and templating, integrated Strapi to efficiently manage and serve content, utilized Stylus to craft elegant and responsive styles, and leveraged JavaScript for enhanced interactivity and functionality. The seamless integration of these technologies was critical in achieving the desired outcome, resulting in a website that not only met but exceeded user expectations.\n\nThis project was a remarkable learning experience, allowing me to hone my web development skills, collaborate effectively with designers, and deliver a polished, user-friendly website. It's a testament to my commitment to continuous improvement and delivering high-quality work."
+        "link": "https://www.humbleteam.com",
+        "technologies": ["Nunjucks", "Strapi", "Stylus", "JavaScript", "Next.js", "Framer-motion", "Apollo", "Figma", "Typescript"],
+        "heading": "Website Redesign",
+        "description": "Initially, my main objective was to update the design of certain elements on the website. At the time, the site was built using the somewhat outdated Nunjucks framework. Transitioning from React to Nunjucks presented its challenges, but I quickly gained confidence in navigating it. After a period of maintenance, I was instructed to integrate the site with the Strapi CMS. At that point, I insisted on rewriting the page using a more widely supported framework, and Next.js emerged as the right choice. Since then, development has been smoother and faster. Overall, the biggest challenge was mastering an unsupported framework in a short period of time and then rewriting the page from one framework to another. For styling, I used Stylus-lang, and for animations, I utilized a combination of pure CSS and Framer Motion."
+    },
+    {
+        "id": 2,
+        "label": "Rimac Technology",
+        "link": "https://rc.rimac-technology.com",
+        "technologies": ["Next.js", "Tailwind", "Storybook", "React.js", "Apollo", "Framer-motion", "Typescript", "react-hook-form", "Chart.js", "Figma", "Vercel"],
+        "heading": "Website build",
+        "description": "I was given some Figma files to work on a project, tasked with building a polished website for a major automotive company. We opted for Next.js to balance presentation with analytics and SEO considerations for future marketing. Styling was handled with Tailwind, while Framer Motion added some flair with animations. Later on, we integrated the site with Strapi CMS using Apollo Client, fine-tuning queries for seamless functionality (codegen was a lifesaver). Then, the folks at Rimac decided on a more formal design direction, so now I'm working on implementaiton of the new design. Two more Rimac sites are in the works, each following a similar style, so I'm developing a custom UI library. The challenges? Making animations smooth on smaller screens and crafting that custom library, but both were great learning opportunities."
+    },
+    {
+        "id": 3,
+        "label": "AllAthlete",
+        "link": "https://start.allathlete.com",
+        "technologies": ["Next.js", "Tailwind", "Stylus", "Framer-motion", "i18n", "Typescript", "Vercel", "BitBucket Pipelines", "CI/CD"],
+        "heading": "Landing page build",
+        "description": "I was entrusted with the development of a landing page for a US-based startup, specializing in high school and university sports talent recruitment. Given the emphasis on marketing campaigns, Next.js was the natural choice. Leveraging Tailwind and Framer Motion, I meticulously translated Figma designs into a pixel-perfect website. In addition to crafting the landing page, part of my responsibility included establishing a Bitbucket pipeline for CI/CD. This ensured seamless integration and deployment processes. The page is currently deployed on Vercel, further streamlining the deployment workflow. This project not only delivered the desired landing page but also paved the way for an ongoing partnership for my employer, Softopus. This collaboration now extends to a redesign of the web application itself."
+    },
+    {
+        "id": 4,
+        "label": "This website",
+        "link": "/",
+        "technologies": ["Next.js", "Tailwind", "Typescript", "react-hook-form", "emailJS", "Framer-motion", "Vercel", "GitHub Actions", "CI/CD"],
+        "heading": "Website build",
+        "description": "Well, this page I'm putting together is a key addition to my portfolio. It's still a work in progress, as you can see—it's currently in staging and not quite ready for production. I've been tinkering with it to explore different ideas and techniques. In fact, I've set up multiple environments for this site—dev, staging, rc, and production—and crafted pipelines for GitHub Actions to manage them. Unfortunately, I can't showcase the code for other projects since it's not my property. But you're more than welcome to take a look at the code for this site on my GitHub. Just scroll down a bit, and you'll find the link. The biggest challenge with this site has been the design aspect. As I'm not a designer by trade, I've been improvising and refining the design multiple times (you can track those iterations in the commits)."
+    },
+    {
+        "id": 5,
+        "label": "Who is closer",
+        "link": "https://github.com/kasikfrantisek/who-is-closer",
+        "technologies": ["React native", "Expo", "Typescript"],
+        "heading": "Side project mobile app",
+        "description": "This small side project serves as a playground for me to practice and delve into mobile development. Given my familiarity with React, the decision to work with React Native was a natural one. I decided to build a small game that originated from a casual brainstorming session over beers—a game meant to be enjoyed in social settings. However, this project isn't published anywhere; it's purely for practice and experimentation purposes. I must admit, crafting a mobile app was an immensely enjoyable experience. Now, feel free to take a look at the code and see what I've been up to!"
     }
 ]

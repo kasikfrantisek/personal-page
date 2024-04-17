@@ -13,19 +13,22 @@ export const Contacts = () => {
             you prefare good old forms just fill up the one thats here.
           </h5>
           <div className="flex flex-col gap-4 pt-14 text-overline-14-medium font-semibold uppercase text-white sm:gap-8 sm:text-h5-light">
-            <Link href="tel:+420607508287">+420 607 508 287</Link>
+            <Link href="tel:+420607508287">tel: +420 607 508 287</Link>
             <Link
               href="mailto:kasik.frantisek97@gmail.com"
               className="break-words"
             >
-              kasik.frantisek97@gmail.com
+              mail: kasik.frantisek97@gmail.com
             </Link>
             <Link href="https://www.instagram.com/frantaklasik" target="blank">
               @frantaklasik
             </Link>
+            <Link href="https://github.com/kasikfrantisek" target="blank">
+              github: kasikfrantisek
+            </Link>
           </div>
         </div>
-        <div className="w-full pt-14">
+        <div className="flex w-full justify-end pt-14">
           <Form />
         </div>
       </div>

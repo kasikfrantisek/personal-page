@@ -1,0 +1,60 @@
+[
+  {
+    "id": 1,
+    "position": "web engineer",
+    "employer": "softopus",
+    "url": "https://www.softopus.io/",
+    "duration": "06 2023 - now",
+    "skills": [
+      "React",
+      "Next.js",
+      "Nunjucks",
+      "Tailwind",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "JIRA",
+      "Storybook",
+      "Sentry",
+      "Vercel",
+      "Strapi CMS",
+      "HotJar",
+      "Framer-motion"
+    ],
+    "description": "In my role, I handle various tasks including building presentation websites and occasionally developing web applications. I've gained proficiency in technologies like Next.js, React.js, Tailwind CSS, Framer Motion, Apollo, and GraphQL. Additionally, I've set up continuous integration and deployment pipelines to Vercel using GitHub Actions and Bitbucket Pipelines. I've also taken on project oversight responsibilities, involving development, team coordination, client and design team communication, JIRA management, and ensuring timely completion of sprints and deadlines."
+  },
+  {
+    "id": 2,
+    "position": "web editor",
+    "employer": "wunderman thompson",
+    "url": "https://www.wundermanthompson.com/cs/czech-republic",
+    "duration": "02 2021 - 06 2022",
+    "skills": ["AEM", "JIRA", "Confulence"],
+    "description": "As a Content Editor, my journey began with managing text and image exchanges, gradually advancing to compiling pages within the AEM environment. This role provided me with a deep understanding of website structures and the opportunity to apply HTML and CSS beyond personal use. Transitioning further, I took on the responsibility of maintaining an e-commerce web application for Ford car sales across nearly twenty European markets. In this capacity, I utilized AEM, browser DevTools, and JIRA for efficient task management and time tracking, ensuring seamless operation and user experience. Additionally, I played a pivotal role in training new colleagues, sharing my expertise and ensuring a smooth onboarding process for the team."
+  },
+  {
+    "id": 3,
+    "position": "web editor",
+    "employer": "studio::čtyry",
+    "url": "https://www.studio-ctyry.cz/",
+    "duration": "07 2020 - 01 2021",
+    "skills": ["Photoshop", "CMS - solidpixels", "Google Analytics"],
+    "description": "When I joined the studio.čtyry it was a tiny online marketing agency that didn't even have a name yet. In the beginning, I did what was needed, from the preparation of publishing plans for social networks, through the creation of content to the creation of websites. We created the website in the Czech template solution solidpixels.cz in close cooperation with clients."
+  },
+  {
+    "id": 4,
+    "position": "catering manager",
+    "employer": "5m2",
+    "url": "https://petmetru.cz/",
+    "duration": "06 2019 - 03 2020",
+    "skills": ["People skills", "Mixology", "Time management"]
+  },
+  {
+    "id": 5,
+    "position": "bartender",
+    "employer": "SKØG",
+    "url": "https://www.skog.cz/",
+    "duration": "12 2017 - 02 2020",
+    "skills": ["People skills", "Mixology"]
+  }
+]

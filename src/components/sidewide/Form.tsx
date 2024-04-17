@@ -83,7 +83,7 @@ export const Form = () => {
 
   return (
     <form
-      className="flex flex-col gap-7 py-10 lg:w-2/3 lg:py-0"
+      className="flex w-full flex-col gap-7 py-10 lg:w-2/3 lg:py-0"
       onSubmit={handleSubmit(onSubmit)}
     >
       <Input
@@ -123,7 +123,7 @@ export const Form = () => {
       />
       <button
         type="submit"
-        className="inline w-fit rounded-full border-[1px] border-white bg-transparent px-3 py-2 text-overline-16-light text-white"
+        className="inline w-fit self-end rounded-full border-[1px] border-white bg-transparent px-3 py-2 text-p-small-medium text-white"
       >
         Send
       </button>
