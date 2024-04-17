@@ -2,11 +2,49 @@
     {
         "id": 1,
         "label": "Humbleteam",
-        "path": ["humbleteam.png","humbleteam.png","humbleteam.png","humbleteam.png"],
         "link": "www.humbleteam.com",
-        "technologies": ["Nunjucks", "Strapi", "Stylus", "JavaScript"],
-        "type": "Employer Provided - Softopus",
-        "heading": "Website Redesign for Humbleteam",
+        "technologies": ["Nunjucks", "Strapi", "Stylus", "JavaScript", "Next.js", "Framer-motion"],
+        "heading": "Website Redesign",
+        "description": "I undertook a significant project with 'Humbleteam,' involving a comprehensive website redesign to elevate the user experience. I closely collaborated with the project's designer, maintaining daily communication and feedback loops to ensure the successful execution of the project's vision. The main objective was to revamp the website's visual appeal and usability, aligning it with the latest design trends and user expectations.\n\nMy role as a developer entailed applying a wide range of technical skills. I harnessed the power of Nunjucks to streamline content management and templating, integrated Strapi to efficiently manage and serve content, utilized Stylus to craft elegant and responsive styles, and leveraged JavaScript for enhanced interactivity and functionality. The seamless integration of these technologies was critical in achieving the desired outcome, resulting in a website that not only met but exceeded user expectations.\n\nThis project was a remarkable learning experience, allowing me to hone my web development skills, collaborate effectively with designers, and deliver a polished, user-friendly website. It's a testament to my commitment to continuous improvement and delivering high-quality work."
+    },
+    {
+        "id": 2,
+        "label": "Rimac Technology",
+        "link": "www.rc.rimac-technology.com",
+        "technologies": ["Nunjucks", "Strapi", "Stylus", "JavaScript", "Next.js", "Framer-motion"],
+        "heading": "Website build",
+        "description": "I undertook a significant project with 'Humbleteam,' involving a comprehensive website redesign to elevate the user experience. I closely collaborated with the project's designer, maintaining daily communication and feedback loops to ensure the successful execution of the project's vision. The main objective was to revamp the website's visual appeal and usability, aligning it with the latest design trends and user expectations.\n\nMy role as a developer entailed applying a wide range of technical skills. I harnessed the power of Nunjucks to streamline content management and templating, integrated Strapi to efficiently manage and serve content, utilized Stylus to craft elegant and responsive styles, and leveraged JavaScript for enhanced interactivity and functionality. The seamless integration of these technologies was critical in achieving the desired outcome, resulting in a website that not only met but exceeded user expectations.\n\nThis project was a remarkable learning experience, allowing me to hone my web development skills, collaborate effectively with designers, and deliver a polished, user-friendly website. It's a testament to my commitment to continuous improvement and delivering high-quality work."
+    },
+    {
+        "id": 3,
+        "label": "AllAthlete",
+        "link": "www.start.allathlete.com",
+        "technologies": ["Nunjucks", "Strapi", "Stylus", "JavaScript", "Next.js", "Framer-motion"],
+        "heading": "Landing page build",
+        "description": "I undertook a significant project with 'Humbleteam,' involving a comprehensive website redesign to elevate the user experience. I closely collaborated with the project's designer, maintaining daily communication and feedback loops to ensure the successful execution of the project's vision. The main objective was to revamp the website's visual appeal and usability, aligning it with the latest design trends and user expectations.\n\nMy role as a developer entailed applying a wide range of technical skills. I harnessed the power of Nunjucks to streamline content management and templating, integrated Strapi to efficiently manage and serve content, utilized Stylus to craft elegant and responsive styles, and leveraged JavaScript for enhanced interactivity and functionality. The seamless integration of these technologies was critical in achieving the desired outcome, resulting in a website that not only met but exceeded user expectations.\n\nThis project was a remarkable learning experience, allowing me to hone my web development skills, collaborate effectively with designers, and deliver a polished, user-friendly website. It's a testament to my commitment to continuous improvement and delivering high-quality work."
+    },
+    {
+        "id": 4,
+        "label": "This website",
+        "link": "www.start.allathlete.com",
+        "technologies": ["Nunjucks", "Strapi", "Stylus", "JavaScript", "Next.js", "Framer-motion"],
+        "heading": "Website build",
+        "description": "I undertook a significant project with 'Humbleteam,' involving a comprehensive website redesign to elevate the user experience. I closely collaborated with the project's designer, maintaining daily communication and feedback loops to ensure the successful execution of the project's vision. The main objective was to revamp the website's visual appeal and usability, aligning it with the latest design trends and user expectations.\n\nMy role as a developer entailed applying a wide range of technical skills. I harnessed the power of Nunjucks to streamline content management and templating, integrated Strapi to efficiently manage and serve content, utilized Stylus to craft elegant and responsive styles, and leveraged JavaScript for enhanced interactivity and functionality. The seamless integration of these technologies was critical in achieving the desired outcome, resulting in a website that not only met but exceeded user expectations.\n\nThis project was a remarkable learning experience, allowing me to hone my web development skills, collaborate effectively with designers, and deliver a polished, user-friendly website. It's a testament to my commitment to continuous improvement and delivering high-quality work."
+    },
+    {
+        "id": 5,
+        "label": "Who is closer",
+        "link": "www.start.allathlete.com",
+        "technologies": ["Nunjucks", "Strapi", "Stylus", "JavaScript", "Next.js", "Framer-motion"],
+        "heading": "Side project mobile app",
+        "description": "I undertook a significant project with 'Humbleteam,' involving a comprehensive website redesign to elevate the user experience. I closely collaborated with the project's designer, maintaining daily communication and feedback loops to ensure the successful execution of the project's vision. The main objective was to revamp the website's visual appeal and usability, aligning it with the latest design trends and user expectations.\n\nMy role as a developer entailed applying a wide range of technical skills. I harnessed the power of Nunjucks to streamline content management and templating, integrated Strapi to efficiently manage and serve content, utilized Stylus to craft elegant and responsive styles, and leveraged JavaScript for enhanced interactivity and functionality. The seamless integration of these technologies was critical in achieving the desired outcome, resulting in a website that not only met but exceeded user expectations.\n\nThis project was a remarkable learning experience, allowing me to hone my web development skills, collaborate effectively with designers, and deliver a polished, user-friendly website. It's a testament to my commitment to continuous improvement and delivering high-quality work."
+    },
+    {
+        "id": 6,
+        "label": "TravelPal",
+        "link": "www.start.allathlete.com",
+        "technologies": ["Nunjucks", "Strapi", "Stylus", "JavaScript", "Next.js", "Framer-motion"],
+        "heading": "AI powered web app for travelers",
         "description": "I undertook a significant project with 'Humbleteam,' involving a comprehensive website redesign to elevate the user experience. I closely collaborated with the project's designer, maintaining daily communication and feedback loops to ensure the successful execution of the project's vision. The main objective was to revamp the website's visual appeal and usability, aligning it with the latest design trends and user expectations.\n\nMy role as a developer entailed applying a wide range of technical skills. I harnessed the power of Nunjucks to streamline content management and templating, integrated Strapi to efficiently manage and serve content, utilized Stylus to craft elegant and responsive styles, and leveraged JavaScript for enhanced interactivity and functionality. The seamless integration of these technologies was critical in achieving the desired outcome, resulting in a website that not only met but exceeded user expectations.\n\nThis project was a remarkable learning experience, allowing me to hone my web development skills, collaborate effectively with designers, and deliver a polished, user-friendly website. It's a testament to my commitment to continuous improvement and delivering high-quality work."
     }
 ]

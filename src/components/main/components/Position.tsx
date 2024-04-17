@@ -20,7 +20,7 @@ export const Position = ({ children, id, mouseOn }: Props) => {
       <h3
         onMouseEnter={() => setId(id)}
         onMouseLeave={() => setHover((prev) => !prev)}
-        className="cursor-pointer pr-2 text-overline-16 md:whitespace-nowrap md:text-h4-light"
+        className="cursor-pointer pr-2 text-overline-16 md:text-h4-light"
       >
         {children}
       </h3>

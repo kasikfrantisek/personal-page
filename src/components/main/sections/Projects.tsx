@@ -1,41 +1,34 @@
+import { AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 
 import data from '@/data/projects.json';
-import { ProjectType } from '@/types/types';
 
 import { SectionWrapper } from '../../sidewide/SectionWrapper';
+import { Position } from '../components/Position';
 import { Project } from '../components/Project';
-import { ProjectModal } from '../components/ProjectModal';
 
 export const Projects = () => {
-  const [displayModal, setDisplayModal] = useState(false);
-  const [project, setProject] = useState<ProjectType>();
-
-  const handleOnClick = (item: ProjectType) => {
-    setDisplayModal(true);
-    setProject(item);
-  };
+  const [displayed, setDisplayed] = useState<number>(1);
 
   return (
-    <SectionWrapper title="I did this for them" id="projects">
-      <div className="relative grid h-fit w-full grid-cols-3 items-center justify-items-center gap-10">
-        {data.map((item) => {
-          return (
-            <Project
-              key={item.id}
-              label={item.label}
-              path={item.path[0]}
-              onClick={() => handleOnClick(item)}
-            />
-          );
-        })}
+    <SectionWrapper title="I did this for them..." id="projects">
+      <div className="grid pt-4 md:gap-20 md:pt-14 xl:grid-cols-6">
+        <div className="flex flex-col gap-y-2 overflow-x-scroll md:flex-wrap md:space-y-5 md:overflow-x-hidden xl:col-span-2">
+          {data.map((project) => (
+            <Position key={project.id} id={project.id} mouseOn={setDisplayed}>
+              {project.label}
+            </Position>
+          ))}
+        </div>
+        <div className="relative h-fit pt-5 md:pt-0 xl:col-span-4">
+          <AnimatePresence>
+            {data.map((job) => {
+              if (job.id == displayed)
+                return <Project key={job.id} data={job} />;
+            })}
+          </AnimatePresence>
+        </div>
       </div>
-      {displayModal && (
-        <ProjectModal
-          project={project}
-          onClick={() => setDisplayModal(false)}
-        />
-      )}
     </SectionWrapper>
   );
 };

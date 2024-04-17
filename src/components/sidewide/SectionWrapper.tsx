@@ -38,7 +38,7 @@ export const SectionWrapper = ({ title, children, id }: Props) => {
   return (
     <section
       ref={ref}
-      className="relative mx-auto flex h-fit w-full max-w-[1440px] flex-col justify-center px-6 py-10 text-white md:pt-[90px] lg:py-[150px] lg:pl-20"
+      className="relative mx-auto flex h-fit w-full max-w-[1440px] flex-col justify-center px-6 py-10 text-white md:pt-[90px] lg:px-20 lg:py-[150px]"
       id={id}
     >
       <motion.h2
