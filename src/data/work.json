@@ -15,9 +15,13 @@
       "JavaScript",
       "JIRA",
       "Storybook",
-      "Sentry"
+      "Sentry",
+      "Vercel",
+      "Strapi CMS",
+      "HotJar",
+      "Framer-motion"
     ],
-    "description": "My job is to maintain an e-commerce web application for Ford car sales. Our team manages this application in almost twenty markets across Europe, we use exclusively AEM (Adobe Experience Manager), browser DevTools for data checking and error detection, and JIRA for task management and time tracking."
+    "description": "In my role, I handle various tasks including building presentation websites and occasionally developing web applications. I've gained proficiency in technologies like Next.js, React.js, Tailwind CSS, Framer Motion, Apollo, and GraphQL. Additionally, I've set up continuous integration and deployment pipelines to Vercel using GitHub Actions and Bitbucket Pipelines. I've also taken on project oversight responsibilities, involving development, team coordination, client and design team communication, JIRA management, and ensuring timely completion of sprints and deadlines."
   },
   {
     "id": 2,
@@ -26,7 +30,7 @@
     "url": "https://www.wundermanthompson.com/cs/czech-republic",
     "duration": "02 2021 - 06 2022",
     "skills": ["AEM", "JIRA", "Confulence"],
-    "description": "My job is to maintain an e-commerce web application for Ford car sales. Our team manages this application in almost twenty markets across Europe, we use exclusively AEM (Adobe Experience Manager), browser DevTools for data checking and error detection, and JIRA for task management and time tracking."
+    "description": "As a Content Editor, my journey began with managing text and image exchanges, gradually advancing to compiling pages within the AEM environment. This role provided me with a deep understanding of website structures and the opportunity to apply HTML and CSS beyond personal use. Transitioning further, I took on the responsibility of maintaining an e-commerce web application for Ford car sales across nearly twenty European markets. In this capacity, I utilized AEM, browser DevTools, and JIRA for efficient task management and time tracking, ensuring seamless operation and user experience. Additionally, I played a pivotal role in training new colleagues, sharing my expertise and ensuring a smooth onboarding process for the team."
   },
   {
     "id": 3,
@@ -39,29 +43,18 @@
   },
   {
     "id": 4,
-    "position": "bartender",
-    "employer": "cabaret des peches",
-    "url": "https://www.cabaretdespeches.com/",
-    "duration": "02 2020 - 07 2020",
-    "skills": ["People skills", "Mixology"],
-    "description": "My job is to maintain an e-commerce web application for Ford car sales. Our team manages this application in almost twenty markets across Europe, we use exclusively AEM (Adobe Experience Manager), browser DevTools for data checking and error detection, and JIRA for task management and time tracking."
-  },
-  {
-    "id": 5,
     "position": "catering manager",
     "employer": "5m2",
     "url": "https://petmetru.cz/",
     "duration": "06 2019 - 03 2020",
-    "skills": ["People skills", "Mixology", "Time management"],
-    "description": "My job is to maintain an e-commerce web application for Ford car sales. Our team manages this application in almost twenty markets across Europe, we use exclusively AEM (Adobe Experience Manager), browser DevTools for data checking and error detection, and JIRA for task management and time tracking."
+    "skills": ["People skills", "Mixology", "Time management"]
   },
   {
-    "id": 6,
+    "id": 5,
     "position": "bartender",
     "employer": "SKØG",
     "url": "https://www.skog.cz/",
     "duration": "12 2017 - 02 2020",
-    "skills": ["People skills", "Mixology"],
-    "description": "My job is to maintain an e-commerce web application for Ford car sales. Our team manages this application in almost twenty markets across Europe, we use exclusively AEM (Adobe Experience Manager), browser DevTools for data checking and error detection, and JIRA for task management and time tracking."
+    "skills": ["People skills", "Mixology"]
   }
 ]

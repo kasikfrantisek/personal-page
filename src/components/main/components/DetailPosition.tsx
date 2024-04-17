@@ -35,15 +35,17 @@ export const DetailPosition = ({ data }: Props) => {
     >
       <h2 className="text-h4 uppercase md:text-h3">{data.position}</h2>
       <div className="flex items-end justify-between md:pt-3">
-        <a href={data.url} target="_blank" className="relative">
-          <h2 className="text-overline-16 hover:underline md:text-h5">
-            {data.employer}
-          </h2>
+        <a
+          href={data.url}
+          target="_blank"
+          className="relative text-overline-16 hover:underline md:text-h5"
+        >
+          <p>{data.employer}</p>
           <span className="absolute -right-6 -top-2">
             <LinkIcon />
           </span>
         </a>
-        <span className="text-overline-16 md:text-h5">{data.duration}</span>
+        <p>{data.duration}</p>
       </div>
       <p className="pt-3 text-p-small">{data.description}</p>
       <div className="flex flex-wrap gap-2 pt-5">
