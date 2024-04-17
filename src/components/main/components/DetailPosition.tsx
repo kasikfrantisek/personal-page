@@ -11,7 +11,7 @@ type Props = {
     url: string;
     duration: string;
     skills: string[];
-    description: string;
+    description?: string;
   };
 };
 
@@ -47,7 +47,9 @@ export const DetailPosition = ({ data }: Props) => {
         </a>
         <p>{data.duration}</p>
       </div>
-      <p className="pt-3 text-p-small">{data.description}</p>
+      {data.description && (
+        <p className="pt-3 text-p-small">{data.description}</p>
+      )}
       <div className="flex flex-wrap gap-2 pt-5">
         {data.skills.map((skill) => (
           <Tag key={skill} title={skill} />
